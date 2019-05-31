@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Usn</title>
+<script type="text/javascript">
+function isUsnValid(){
+	var s = document.getElementById('usn');
+	var res = s.value.search(/^[1-4]{1}[A-Z]{2}\d{2}[A-Z]{2}\d{3}$/i);
+	if(res!=0)
+		alert("Invalid Usn");
+	else
+		alert("Valid Usn");
+}	
+</script>
+
+</head>
+<body>
+	<form>
+USN:<input type="text" id="usn"/>
+<input type="submit" onclick="isUsnValid()" name="Submit" value="Submit">
+</form>
+</body>
+</html>
